@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   resources :sessions
   resources :menucategories
   resources :menuitems
+  resources :addtocart
+  resources :getcart
 end

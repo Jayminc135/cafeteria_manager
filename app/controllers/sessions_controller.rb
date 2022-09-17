@@ -1,10 +1,10 @@
 class SessionsController < ApplicationController
-  def create
+  def index
     user = User.find_by(email: params[:email])
     if user && user.authenticate(params[:password])
-      head :ok
+      render json: user
     else
-      head :unauthorized
+      head 204
     end
   end
 end
