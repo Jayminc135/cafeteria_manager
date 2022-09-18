@@ -7,4 +7,8 @@ Rails.application.routes.draw do
   resources :menuitems
   resources :addtocart
   resources :getcart
+  resources :updatequantity
+  resources :addorder
+  resources :addorderitem
+  resources :clearcart
 end
