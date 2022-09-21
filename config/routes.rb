@@ -11,4 +11,10 @@ Rails.application.routes.draw do
   resources :addorder
   resources :addorderitem
   resources :clearcart
+  resources :getorders
+  resources :getorderitems
+  resources :changeorderstatus
+  resources :getuser
+  resources :addmenucategory
+  resources :addmenuitem
 end
