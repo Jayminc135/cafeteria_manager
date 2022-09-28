@@ -17,4 +17,6 @@ Rails.application.routes.draw do
   resources :getuser
   resources :addmenucategory
   resources :addmenuitem
+  resources :addfeedback
+  resources :getorder
 end
