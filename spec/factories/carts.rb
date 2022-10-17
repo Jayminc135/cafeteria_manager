@@ -6,8 +6,8 @@ FactoryBot.define do
     menu_item_name { "item" }
     menu_item_price { 100 }
     quantity { 1 }
-    created_at { "2022-10-12 21:02:10" }
-    updated_at { "2022-10-12 21:02:10" }
+    created_at { DateTime.now }
+    updated_at { DateTime.now }
     user
   end
 end

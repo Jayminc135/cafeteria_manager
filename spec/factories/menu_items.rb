@@ -4,8 +4,8 @@ FactoryBot.define do
     name { "item1" }
     description { "" }
     price { 100 }
-    created_at { "2022-10-12 21:02:10" }
-    updated_at { "2022-10-12 21:02:10" }
+    created_at { DateTime.now }
+    updated_at { DateTime.now }
     menu_category
   end
 end
