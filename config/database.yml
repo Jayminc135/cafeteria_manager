@@ -1,6 +1,3 @@
-require 'dotenv'
-
-Dotenv.load
 # MySQL. Versions 5.5.8 and up are supported.
 #
 # Install the MySQL driver
