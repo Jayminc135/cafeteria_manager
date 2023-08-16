@@ -14,7 +14,7 @@ default: &default
   encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-  password: Krsna$@18
+  password:
   socket: /tmp/mysql.sock
 
 development:
@@ -49,7 +49,8 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: cafeteria_manager_production
-  username: cafeteria_manager
-  password: <%= ENV["CAFETERIA_MANAGER_DATABASE_PASSWORD"] %>
+  url: <%= ENV["MY_APP_DATABASE_URL"] %>
+#  <<: *default
+#  database: cafeteria_manager_production
+#  username: cafeteria_manager
+#  password: <%#= ENV["CAFETERIA_MANAGER_DATABASE_PASSWORD"] %>
