@@ -74,3 +74,4 @@ group :test do
 end
 
 gem 'rack-cors'
+gem 'dotenv-rails'
